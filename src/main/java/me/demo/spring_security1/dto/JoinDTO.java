@@ -14,12 +14,11 @@ public class JoinDTO {
     public User toUserEntity(){
 
         final BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder();
-        System.out.println(password);
 
         return User.builder()
                 .username(username)
                 .password(bCryptPasswordEncoder.encode(password)) //  패스워드 암호화
-                .role("ROLE_USER")
+                .role("ROLE_ADMIN") // 어드민 권한을 주는 방식으로 테스트
                 .build();
     }
 }
