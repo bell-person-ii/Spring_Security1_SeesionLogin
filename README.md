@@ -1,3 +1,6 @@
+# 세션 기반 스프링 스큐리티 로그인 기본 설정예시
+
+---
 
 로그인 전 메인(/)
 <img width="1512" alt="image" src="https://github.com/bell-person-ii/Spring_Security1_SeesionLogin/assets/76873740/efeb5048-4c68-492c-978b-aa3a84c37e81">
