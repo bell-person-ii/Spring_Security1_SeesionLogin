@@ -12,3 +12,12 @@ spring:
     hibernate:
       ddl-auto: create
 
+  mustache:
+    servlet:
+      expose-request-attributes: true
+
+server:
+  servlet:
+    session:
+      timeout: 1800
+

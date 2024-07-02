@@ -31,7 +31,21 @@ public class SecurityConfig {
 
         http.formLogin((auth)->auth.loginPage("/login").loginProcessingUrl("/loginProc").permitAll()); // 로그인을 하지 않은 상태에서 로그인이 필요한 페이지에 접근을 시도할 경우 로그인페이지로 리다이렉션 + 로그인데이터를 넘길 URL 설정
 
-        http.csrf((auth)->auth.disable());
+
+        http
+                .sessionManagement((auth)-> auth
+                        .maximumSessions(1) // 다중로그인 허용개수
+                        .maxSessionsPreventsLogin(true)); //초과시 새로운 로그인 치딘
+
+        http
+                .sessionManagement(((auth)-> auth //로그인시 세션에 대한 쿠키(id) 변경
+                        .sessionFixation().changeSessionId()));
+
+        http
+                .logout((auth) ->auth
+                        .logoutSuccessUrl("/")); //get 방식 로그아웃
+
         return http.build();
     }
+
 }
