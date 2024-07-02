@@ -37,5 +37,6 @@
 ---
 ## admin 페이지 (/admin)
 <img width="1512" alt="image" src="https://github.com/bell-person-ii/Spring_Security1_SeesionLogin/assets/76873740/d8dd3737-1877-4175-893d-e5ee1ca785d1">
+
 ---
-로그아웃(/logout)
+## 로그아웃(/logout)
