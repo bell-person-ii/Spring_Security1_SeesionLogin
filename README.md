@@ -7,7 +7,7 @@
 
 ---
 
-가입 (/join) : 해당 예시의 경우 기본적으로 admin 궈한으로 가입 되도록 설정함
+가입 (/join) : 해당 예시의 경우 기본적으로 admin 권한으로 가입 되도록 설정함
 ```
     public User toUserEntity(){
 
