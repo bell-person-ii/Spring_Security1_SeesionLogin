@@ -2,12 +2,13 @@
 
 ---
 
-로그인 전 메인(/)
+## 로그인 전 메인(/)
 <img width="1512" alt="image" src="https://github.com/bell-person-ii/Spring_Security1_SeesionLogin/assets/76873740/efeb5048-4c68-492c-978b-aa3a84c37e81">
 
 ---
 
-가입 (/join) : 해당 예시의 경우 기본적으로 admin 권한으로 가입 되도록 설정함
+## 가입 (/join) 
+: 해당 예시의 경우 기본적으로 admin 권한으로 가입 되도록 설정함
 ```
     public User toUserEntity(){
 
@@ -26,11 +27,11 @@
 
 ---
 
-로그인(/login)
+## 로그인(/login)
 <img width="1512" alt="image" src="https://github.com/bell-person-ii/Spring_Security1_SeesionLogin/assets/76873740/cfed7cc1-6689-448b-bc01-2c8b165173fa">
 
 ---
-로그인 후 메인(/)
+## 로그인 후 메인(/)
 <img width="1512" alt="image" src="https://github.com/bell-person-ii/Spring_Security1_SeesionLogin/assets/76873740/b6544166-673d-47b8-9d2d-7b45974a7ef8">
 
 admin 페이지 (/admin)
